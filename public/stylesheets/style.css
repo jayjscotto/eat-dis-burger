@@ -1,8 +1,42 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+body {
+  height: 100%;
 }
+
+body {
+  height: 100%;
+}
+
+body #bg {
+  background-color: #03FCD7;
+  -webkit-clip-path: polygon(100% 17%, 100% 66%, 0 88%, 0 39%);
+          clip-path: polygon(100% 17%, 100% 66%, 0 88%, 0 39%);
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: .8;
+}
+
+body img {
+  display: block;
+  margin: 2em auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

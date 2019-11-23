@@ -15,9 +15,7 @@ $colors: (
 @function colors($color-name) {
     @return map-get($colors, $color-name)
 }
-body {
-    height: 100%;
-}
+
 
 body {
     height: 100%;

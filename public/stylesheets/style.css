@@ -10,10 +10,6 @@ body {
   height: 100%;
 }
 
-body {
-  height: 100%;
-}
-
 body #bg {
   background-color: #03FCD7;
   -webkit-clip-path: polygon(100% 17%, 100% 66%, 0 88%, 0 39%);

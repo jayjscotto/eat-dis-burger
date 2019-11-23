@@ -1,0 +1,10 @@
+<li>
+	{{name}}
+
+    {{#if not eaten}}
+	<button class="change-eat-state" data-id="{{id}}" data-neweat="{{eaten}}">
+		EAT DIS
+	</button>
+    {{/if}}
+	<button class="delete" data-id="{{this.id}}">Delete</button>
+</li>

@@ -20,5 +20,37 @@ $(document).on('click', '#burger-submit', function(e) {
             location.reload();
         });
     }
-  
+})
+
+$(document).on('click', '.changeState', function(e) {
+    let id = $(this).data('id');
+
+    let eatState = {
+        eaten: $(this).data('eaten')
+    } 
+
+    
+    if (!eatState.eaten) {
+
+        $.ajax('/api/' + id, {
+            method: 'PUT',
+            data: eatState
+        }).then(function(data) {
+            console.log(data);
+
+            location.reload();
+        })
+
+    } else if (eatState.eaten) {
+
+        $.ajax('/api/' + id, {
+            method: 'DELETE',
+            data: eatState
+        }).then(function(data) {
+            console.log(data);
+
+            location.reload();
+        })
+        
+    }
 })

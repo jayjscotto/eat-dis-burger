@@ -32,7 +32,7 @@ router.post('/api/new-burger', function(req, res, next) {
 });
 
 
-router.put('/api/:burgerID/:user', function (req, res, next) {
+router.put('/api/:burgerID', function (req, res, next) {
   //burger being edited
   let updatedBurger = req.params.burgerID;
 
@@ -41,6 +41,8 @@ router.put('/api/:burgerID/:user', function (req, res, next) {
   if (req.params.user) {
     user = req.params.user;
   }
+
+  console.log(req.params.eatState);
 
   let changedCol = 'eaten';
   let newVal = true;

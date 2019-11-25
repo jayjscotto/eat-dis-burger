@@ -37,6 +37,14 @@ body h1.title {
   text-align: center;
 }
 
+body .col {
+  margin: 0 !important;
+}
+
+body div.burgers ul {
+  list-style: none;
+}
+
 body div.burgers ul button.changeState {
   background-color: #52605C;
   padding: 0.25em 0.5em;

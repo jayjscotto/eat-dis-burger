@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS eatburgers ;
+DROP DATABASE IF EXISTS eatburgers;
 CREATE DATABASE eatburgers;
 
 USE eatburgers;

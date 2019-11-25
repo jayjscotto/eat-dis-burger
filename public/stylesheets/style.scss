@@ -45,8 +45,15 @@ body {
         text-align: center;
     }
 
+    .col {
+        margin: 0!important;
+
+    }
+    
     div.burgers{
         ul {
+            list-style: none;
+
             button.changeState{
                     background-color: colors(text-shadow);
                     padding: 0.25em 0.5em;

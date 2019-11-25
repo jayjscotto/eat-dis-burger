@@ -5,13 +5,9 @@ const burger = require('../../models/model');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   //get all burgers from db
-  burger.findAll(function (data) {
-    let burgersObj = {
-      burgers: data
-    }
-    console.log(burgersObj)
-    
-    res.render('index', {body: 'layout', title: 'Eat-Dis-Burger', burgersObj: burgersObj});
+  burger.findAll(function (result) {
+    let burgers = result;
+    res.render('index', { title: 'Eat-Dis-Burger', body: 'layout', burgers: 'burgers' });
   })
   
 });
@@ -19,15 +15,8 @@ router.get('/', function(req, res, next) {
 router.post('/api/new-burger', function(req, res, next) {
   let newBurger = req.body.burger;
 
-  burger.create('burger', [newBurger], function (result) {
-
-    console.log(result);
-
-    if (result.affectedRows === 0) {
-      return res.status(418).end()
-    } else {
-      return res.status(200).end()
-    }
+  burger.create('burger', newBurger.burger, function (result) {
+    res.json(result);
   });
 });
 
@@ -58,6 +47,5 @@ router.delete('/api/:burgerID', function (req, res, next) {
     res.json(result);
   });
 });
-
 
 module.exports = router;

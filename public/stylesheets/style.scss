@@ -8,8 +8,8 @@
 $colors: (
     primary: #03FCD7,
     accent: #387A66,
-    light-accent: #1CCAD8,
-    text-color: #52605C
+    light-accent: rgb(47, 231, 255),
+    text-shadow: #52605C
 );
 
 @function colors($color-name) {
@@ -38,10 +38,48 @@ body {
         box-shadow: 0 10px 30px rgba(0,0,0,.2);
     }
 
-    h1 {
+    h1.title {
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 600;
+        letter-spacing: 4px;
         text-align: center;
+    }
+
+    div.burgers{
+        ul {
+            button.changeState{
+                    background-color: colors(text-shadow);
+                    padding: 0.25em 0.5em;
+                    color: colors(light-accent);
+                    text-transform: uppercase;
+                    font-weight: 700;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+            }
+        }
+    }
+    div#user-input {
+        h3{
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+        form {
+            button#burger-submit{
+                background-color: colors(text-shadow);
+                padding: 1em 2em;
+                color: colors(light-accent);
+                text-transform: uppercase;
+                font-weight: 700;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+        }
     }
 
 }

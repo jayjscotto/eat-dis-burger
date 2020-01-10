@@ -13,8 +13,7 @@ Enter a burger to put it on the list, click the burger's `Eat It!` button to eat
 * [Node](https://nodejs.org/en) - Javascript run-time environment that exectues server side code.
 * [Express](https://www.npmjs.com/package/express) - Node package used as middleware to create routes.
 * [Express-Handlebars](https://www.npmjs.com/package/express-handlebars) - Node package used as middleware to create templates for rendering pages. 
-* [MySQL](https://dev.mysql.com/doc/) - The world's most popular open source database.
-* [MySql](https://www.mysql.com/) - Structured Query Language is a relational database management system used for storing data.
+* [MySQL](https://dev.mysql.com/doc/) - The world's most popular open source relational database.
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Mark up language used for structuring pages. 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Stylesheet language used to describe presentation of pages. 
 * [Sass](https://sass-lang.com/) -  (short for Syntactically Awesome Style Sheets) CSS pre-processor to make writing CSS easier with use of variables and mixins.

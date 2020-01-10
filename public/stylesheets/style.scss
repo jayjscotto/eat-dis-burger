@@ -19,7 +19,7 @@ $colors: (
 
 body {
     height: 100%;
-    
+    text-transform: uppercase;
     #bg {
         background-color: colors(primary);
         clip-path: polygon(100% 17%, 100% 66%, 0 88%, 0 39%);

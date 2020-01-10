@@ -6,10 +6,12 @@ const burger = require('../../models/model');
 router.get('/', function(req, res, next) {
   //get all burgers from db
   burger.findAll(function (data) {
+    
     let burgersObj = {
       burgers: data
     }
-    console.log(burgersObj)
+
+    console.log(burgersObj);
     
     res.render('index', {body: 'layout', title: 'Eat-Dis-Burger', burgersObj: burgersObj});
   })

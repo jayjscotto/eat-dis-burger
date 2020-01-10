@@ -7,6 +7,7 @@ $(document).ready(function() {
         let burger =  {
             burger: $('#burger-input').val()
         }
+        
         console.log(burger);
         
         if (burger) {

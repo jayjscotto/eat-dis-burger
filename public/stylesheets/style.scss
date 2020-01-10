@@ -57,7 +57,6 @@ body {
                     background-color: colors(text-shadow);
                     padding: 0.25em 0.5em;
                     color: colors(light-accent);
-                    text-transform: uppercase;
                     font-weight: 700;
 
                     &:hover {
@@ -68,7 +67,6 @@ body {
     }
     div#user-input {
         h3{
-            text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 600;
         }
@@ -77,7 +75,6 @@ body {
                 background-color: colors(text-shadow);
                 padding: 1em 2em;
                 color: colors(light-accent);
-                text-transform: uppercase;
                 font-weight: 700;
 
                 &:hover {

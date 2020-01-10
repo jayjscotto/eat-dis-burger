@@ -21,7 +21,7 @@ Enter a burger to put it on the list, click the burger's `Eat It!` button to eat
 # Installation && Running Locally
     - Clone the repository
     - Navigate to the project directory, and run `npm install`
-    - Update `config.js` in the `development` section to your mysql credentials/information
+    - Update `connection.js` to display your MySQL settings (DB name, host, user, password, etc) section to your mysql  `                       credentials/information
     - run `npm start`
     - Navigate to the URL in the browser and test!
 
